@@ -1,0 +1,55 @@
+<html ng-app="todoApp">
+
+<head>
+    <title>To do App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/styles/tiny-date-picker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Anton|Pangolin" rel="stylesheet">
+</head>
+
+<body ng-controller="todoController">
+    <div id="container" >
+        <form ng-submit="addTask(task)">
+            <h1>To Do  <input class="datePicker" type="text" placeholder="Today"/>
+                <i id="sign" class="fa fa-minus-circle" aria-hidden="true" style="float:right"></i>
+                <i class="fa fa-plus-circle" aria-hidden="true" style="float:right"></i>
+            </h1>
+            <input type="text" class="taskAdd" ng-model="task.description"  maxlength="25"  placeholder="Enter task...">
+            <input type="submit" id="submit" value="Submit" ng-show="false" />
+            <ul >
+                <li class="fade" ng-class="task.color" ng-repeat="task in Tasks track by $index">
+                    <div style="display:inline-block;width:100%">
+                        <div style="float:left;width:70%;margin-top:-6px;">
+                            <span id="trash" >
+                                <i class="fa fa-trash" style="padding-top:5px;" ng-click="removeTask(task, $index)" aria-hidden="true"></i>
+                            </span>
+                            <a ng-class="{'strike': task.striked==true}" ng-click="strike(task)">{{task.id}}. {{task.description}}</a>
+                        </div>
+                        <div style="width:30%;display:inline-block" class="color-choose">
+                            <div ng-repeat="color in Colors" ng-init="index=task">
+                                <div ng-click="changeColor(color,index, $event)">
+                                <input  type="radio" id="{{color.value}}"  name="color" >
+                                <label for="{{color.value}}">
+                                    <span></span>
+                                </label>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </form>
+
+    </div>
+    <div class="wrap">
+            <input class="btn" value="Work done" type="button" ng-click="removeDoneTasks()" />
+          </div>
+    <script src="assets/scripts/todo.min.js"></script>
+    <script src="src/scripts/index.js"></script>
+    <script src="src/scripts/todoController.js"></script>
+</body>
+
+</html>

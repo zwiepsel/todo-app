@@ -1,0 +1,214 @@
+body{
+    background: linear-gradient(to right, #007991, #78ffd6);
+  }
+  h1{
+    background: #2a539e;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  #container{
+    width: 400px;
+    margin: 30px auto 20px auto;
+    background: #f7f7f7;
+    box-shadow: 8px 9px 38px -8px rgba(0,0,0,0.75);
+  }
+
+ #container .datePicker{
+    margin-left:30px;
+    width:180px ;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    font-family: 'Pangolin', cursive;
+    padding: 0px;
+    cursor: pointer;
+
+
+  }
+
+  .datePicker::placeholder {
+    color: white;
+  }
+  .strike {
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  #trash{
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    width: 0px;
+    transition: 200ms linear;
+    opacity: 0;
+  }
+  
+  li:hover #trash{
+    width: 40px;
+    opacity: 1;
+  }
+
+  #color {
+    margin-left:5px;
+    margin-top:5px;
+    color: #2a539e;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  li{
+    background: #fff;
+    height: 40px;
+    color: #666;
+    opacity: 0;
+
+  }
+  
+  li.fade{
+    opacity: 1;
+  }
+  
+  
+  #container input{
+    font-size: 1.5em;
+    background: #f7f7f7;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    padding: 12px 12px 12px 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+  #container input:focus{
+    background: white;
+    border: 3px solid rgba(87, 98, 255, 0.76);
+    outline: none;
+    font-weight: lighter;
+  }
+  
+  .fa, li{
+    cursor: pointer;
+  }
+  
+  h1>.fa-plus-circle{
+    display: none;
+  }
+
+
+  .color-choose div {
+    display: inline-block;
+    float:right;
+  }
+  .color-choose input[type="radio"] {
+    display: none;
+  }
+   
+
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+ 
+.color-choose input[type="radio"] + label span {
+  border: 2px solid #FFFFFF;
+  
+}
+ 
+.color-choose input[type="radio"]#lightblue + label span {
+  background-color: #2a539e;
+}
+.color-choose input[type="radio"]#darkblue + label span {
+  background-color: #0497ca;
+}
+.color-choose input[type="radio"]#green + label span {
+  background-color: #89d99a;
+}
+.color-choose input[type="radio"]#yellow + label span {
+  background-color: #f6d03f;
+}
+
+.lightblue {
+  color: white;
+  background-color: #2a539e;
+}
+
+.darkblue {
+  color: white;
+  background-color: #0497ca; 
+}
+
+.green {
+  color:black;
+  background-color: #89d99a;
+}
+
+.yellow {
+  color:black;
+  background-color: #f6d03f;
+}
+
+.white {
+  color:#666;
+  background-color: white;
+}
+
+.wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* .btn {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid #57aae1;
+  background: radial-gradient(ellipse at center, #7ebde8, #68b2e4);
+  box-shadow: 0 15px 50px #3498db, 0 -15px 60px #b6daf2, inset 0 2px 2px #8bc4ea;
+  -webkit-transition: all 0.3s ease;
+} */
+.btn{
+width: 130px;
+height: 130px;
+border-radius: 50%;
+border: 1px solid #8a2c22;
+background: radial-gradient(ellipse at center, #bb2727, #5d1928);
+box-shadow: 0 15px 50px #943d5d, 0 -15px 60px #d86474, inset 0 2px 2px #ca6082;
+color: white;
+-webkit-transition: all 0.3s ease;
+font-family: 'Amatic SC', cursive;
+font-weight: bold;
+font-size: 1.5em;
+}
+
+.btn:active {
+  margin-top: 1px;
+  -webkit-transform: scale(0.95);
+  -webkit-transition: all 0.3s ease;
+  outline: none;
+  background: radial-gradient(ellipse at center, #e73c3c, #a01838);
+  box-shadow: 0 15px 50px #943d5d, 0 -15px 60px #d86474, inset 0 2px 2px #ca6082;
+  color: white;
+  }
+.btn:focus {
+  outline: none;
+}

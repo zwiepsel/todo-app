@@ -1,0 +1,25 @@
+{
+  "name": "todo-app",
+  "description": "A simple to do list creator",
+  "main": "index.js",
+  "authors": [
+    "Coen Oude Luttikhuis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "todo",
+    "date"
+  ],
+  "homepage": "https://github.com/zwiepsel/todo-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.9",
+    "jquery": "^3.3.1"
+  }
+}

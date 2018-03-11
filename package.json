@@ -1,0 +1,36 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "A simple to do list creator",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "grunt-include-source": "^1.1.0",
+    "tiny-date-picker": "^3.1.8"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-serve": "^0.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwiepsel/todo-app.git"
+  },
+  "keywords": [
+    "todo",
+    "date"
+  ],
+  "author": "Coen Oude Luttikhuis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zwiepsel/todo-app/issues"
+  },
+  "homepage": "https://github.com/zwiepsel/todo-app#readme"
+}

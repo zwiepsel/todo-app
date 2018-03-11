@@ -34,6 +34,13 @@ Grunt
 
 The server will be hosted localhost:8000
 
+### Features
+
+
+* Create todo's and delete them
+* Priorities your todo with different colors
+* Check of multiple todo's before deleting them
+* [BONUS] Creating todo's for every day with a datepicker
 
 ## Deployment
 
